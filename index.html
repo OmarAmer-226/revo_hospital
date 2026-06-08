@@ -35,13 +35,13 @@
                             <a href = "#" class = "nav-link">Home</a>
                         </li>
                         <li class = "nav-item">
-                            <a href = "#" class = "nav-link">About</a>
+                            <a href = "#about" class = "nav-link">About</a>
                         </li>
                         <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Service</a>
+                            <a href = "#services" class = "nav-link">Service</a>
                         </li>
                         <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Doctors</a>
+                            <a href = "#doc-panel" class = "nav-link">Doctors</a>
                         </li>
                         <li class = "nav-item">
                             <a href = "#" class = "nav-link">Departments</a>
@@ -96,14 +96,18 @@
                             <h2>About Us</h2>
                             <div class = "border-line"></div>
                         </div>
-                        <p class = "text text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias delectus facilis, temporibus eum consectetur, a debitis exercitationem quae distinctio aliquid ea ipsam vitae esse amet soluta maxime dolorem? Inventore ut maiores illo ipsum nisi, nulla eligendi unde reiciendis quod voluptas velit sit voluptate perferendis cum pariatur molestiae tenetur repellat!</p>
-                        <a href = "#" class = "btn btn-white">Learn More</a>
+                        <p class = "text text-lg">Revo is built around one simple promise: trusted medical care that feels personal, clear, and close to home. Our team combines modern diagnostics, experienced doctors, and compassionate support so every patient can move from concern to confidence.</p>
+                        <div class = "about-features" id = "about-features"></div>
+                        <a href = "#contact" class = "btn btn-white">Book Appointment</a>
                     </div>
                     <div class = "about-right flex">
                         <div class = "img">
                             <img src = "images/about-img.png">
                         </div>
                     </div>
+                </div>
+                <div class = "container">
+                    <div class = "about-stats grid" id = "about-stats"></div>
                 </div>
             </div>
         </section>
@@ -122,46 +126,18 @@
         <section id = "services" class = "services py">
             <div class = "container">
                 <div class = "section-head text-center">
-                    <h2 class = "lead">The Best Doctor gives the least medicines</h2>
-                    <p class = "text text-lg">A perfect way to show your hospital services</p>
+                    <h2 class = "lead">Care Services Built Around You</h2>
+                    <p class = "text text-lg">Choose from Revo's most requested medical services and get support from diagnosis to recovery.</p>
                     <div class = "line-art flex">
                         <div></div>
                         <img src = "images/4-dots.png">
                         <div></div>
                     </div>
                 </div>
-                <div class = "services-inner text-center grid">
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-1.png">
-                        </div>
-                        <h3>Cardio Monitoring</h3>
-                        <p class = "text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus consequatur!</p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-2.png">
-                        </div>
-                        <h3>Medical Treatment</h3>
-                        <p class = "text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus consequatur!</p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-3.png">
-                        </div>
-                        <h3>Emergency Help</h3>
-                        <p class = "text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus consequatur!</p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-4.png">
-                        </div>
-                        <h3>First Aid</h3>
-                        <p class = "text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus consequatur!</p>
-                    </article>
+                <div class = "services-inner text-center grid" id = "services-list">
+                </div>
+                <div class = "services-action text-center">
+                    <a href = "#contact" class = "btn btn-blue">Request a Service</a>
                 </div>
             </div>
         </section>
@@ -189,36 +165,64 @@
             <div class = "container">
                 <div class = "section-head">
                     <h2>Our Doctor Panel</h2>
+                    <p class = "text text-lg">Meet the specialists who lead Revo's patient care every day.</p>
                 </div>
 
                 <div class = "doc-panel-inner grid">
                     <div class = "doc-panel-item">
                         <div class = "img flex">
-                            <img src = "images/doc-1.png" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">samuel goe</p>
-                                <p class = "text-lg">Medicine</p>
+                            <img src = "images/doc-1.png" alt = "Dr. Samuel Goe">
+                            <div class = "info text-center bg-blue text-white">
+                                <p class = "lead">Dr. Samuel Goe</p>
+                                <p class = "text-lg">Internal Medicine</p>
                             </div>
+                        </div>
+                        <div class = "doc-content">
+                            <span class = "doc-specialty">Primary Care</span>
+                            <h3>Dr. Samuel Goe</h3>
+                            <p class = "text text-sm">Focused on preventive care, diagnosis, and long-term health plans for adults and families.</p>
+                            <ul class = "doc-meta">
+                                <li><i class = "fas fa-clock"></i> Mon - Thu</li>
+                                <li><i class = "fas fa-star"></i> 12 years experience</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class = "doc-panel-item">
                         <div class = "img flex">
-                            <img src = "images/doc-2.png" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">elizabeth ira</p>
+                            <img src = "images/doc-2.png" alt = "Dr. Elizabeth Ira">
+                            <div class = "info text-center bg-blue text-white">
+                                <p class = "lead">Dr. Elizabeth Ira</p>
                                 <p class = "text-lg">Cardiology</p>
                             </div>
                         </div>
+                        <div class = "doc-content">
+                            <span class = "doc-specialty">Heart Specialist</span>
+                            <h3>Dr. Elizabeth Ira</h3>
+                            <p class = "text text-sm">Provides cardiac screenings, monitoring, and treatment guidance for heart health concerns.</p>
+                            <ul class = "doc-meta">
+                                <li><i class = "fas fa-clock"></i> Tue - Sat</li>
+                                <li><i class = "fas fa-star"></i> 15 years experience</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class = "doc-panel-item">
                         <div class = "img flex">
-                            <img src = "images/doc-3.png" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">tanya collins</p>
-                                <p class = "text-lg">Medicine</p>
+                            <img src = "images/doc-3.png" alt = "Dr. Tanya Collins">
+                            <div class = "info text-center bg-blue text-white">
+                                <p class = "lead">Dr. Tanya Collins</p>
+                                <p class = "text-lg">Emergency Care</p>
                             </div>
+                        </div>
+                        <div class = "doc-content">
+                            <span class = "doc-specialty">Emergency Lead</span>
+                            <h3>Dr. Tanya Collins</h3>
+                            <p class = "text text-sm">Leads urgent care response, first assessment, and stabilization for critical cases.</p>
+                            <ul class = "doc-meta">
+                                <li><i class = "fas fa-clock"></i> 24/7 rotation</li>
+                                <li><i class = "fas fa-star"></i> 10 years experience</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -230,35 +234,53 @@
         <section id = "package-service" class = "package-service py text-center">
             <div class = "container">
                 <div class = "package-service-head text-white">
-                    <h2>Package Service</h2>
-                    <p class = "text text-lg">Best service package for you</p>
+                    <h2>Care Packages</h2>
+                    <p class = "text text-lg">Simple medical packages for routine visits, advanced care, and urgent support.</p>
                 </div>
                 <div class = "package-service-inner grid">
                     <div class = "package-service-item bg-white">
                         <div class = "icon flex">
-                            <i class = "fas fa-phone fa-2x"></i>
+                            <i class = "fas fa-notes-medical fa-2x"></i>
                         </div>
-                        <h3>Regular Case</h3>
-                        <p class = "text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.</p>
-                        <a href = "#" class = "btn btn-blue">Read More</a>
+                        <span class = "package-label">Routine Care</span>
+                        <h3>Wellness Check</h3>
+                        <p class = "text text-sm">A complete checkup package for regular health reviews, early detection, and doctor guidance.</p>
+                        <ul class = "package-list">
+                            <li><i class = "fas fa-check"></i> General consultation</li>
+                            <li><i class = "fas fa-check"></i> Basic lab screening</li>
+                            <li><i class = "fas fa-check"></i> Follow-up care advice</li>
+                        </ul>
+                        <a href = "#contact" class = "btn btn-blue">Book Package</a>
                     </div>
 
                     <div class = "package-service-item bg-white">
                         <div class = "icon flex">
-                            <i class = "fas fa-calendar-alt fa-2x"></i>
+                            <i class = "fas fa-user-doctor fa-2x"></i>
                         </div>
-                        <h3>Serious Case</h3>
-                        <p class = "text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.</p>
-                        <a href = "#" class = "btn btn-blue">Read More</a>
+                        <span class = "package-label">Specialist Care</span>
+                        <h3>Advanced Treatment</h3>
+                        <p class = "text text-sm">Designed for patients who need specialist review, deeper diagnostics, and a focused care plan.</p>
+                        <ul class = "package-list">
+                            <li><i class = "fas fa-check"></i> Specialist appointment</li>
+                            <li><i class = "fas fa-check"></i> Diagnostic coordination</li>
+                            <li><i class = "fas fa-check"></i> Treatment roadmap</li>
+                        </ul>
+                        <a href = "#contact" class = "btn btn-blue">Book Package</a>
                     </div>
                     
                     <div class = "package-service-item bg-white">
                         <div class = "icon flex">
-                            <i class = "fas fa-comments fa-2x"></i>
+                            <i class = "fas fa-truck-medical fa-2x"></i>
                         </div>
-                        <h3>Emergency Case</h3>
-                        <p class = "text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.</p>
-                        <a href = "#" class = "btn btn-blue">Read More</a>
+                        <span class = "package-label">Urgent Care</span>
+                        <h3>Emergency Response</h3>
+                        <p class = "text text-sm">Fast medical support for urgent symptoms, injuries, and immediate care needs at any hour.</p>
+                        <ul class = "package-list">
+                            <li><i class = "fas fa-check"></i> Priority assessment</li>
+                            <li><i class = "fas fa-check"></i> 24/7 emergency team</li>
+                            <li><i class = "fas fa-check"></i> Rapid care transfer</li>
+                        </ul>
+                        <a href = "#contact" class = "btn btn-blue">Book Package</a>
                     </div>
                 </div>
             </div>
